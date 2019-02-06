@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
+set -e
+
 magick mogrify -monitor -format jpg $PWD/*.HEIC
