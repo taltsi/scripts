@@ -2,4 +2,6 @@
 
 set -e
 
-magick mogrify -monitor -format jpg $PWD/*.HEIC
+quality=${1:-95}
+
+magick mogrify -monitor -format jpg -quality $quality $PWD/*.HEIC
