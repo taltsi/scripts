@@ -2,7 +2,7 @@
 
 set -e
 
-size=${1:1920x1920}
+size=${1:-1920x1920}
 quality=${1:-95}
 
 magick mogrify -resize $size -quality $quality $PWD/*.jpg
